@@ -1,0 +1,52 @@
+Elastic File System
+- Managed NFS (network file system) that can be mounted on 100s of EC2
+- EFS works with Linux EC2 instances in multi-AZ
+- Highly available, scalable, expensive (3x gp2), pay per use, no capacity planning
+
+
+
+EBS vs EFS
+- Storage Type
+  - EBS is block-level storage while EFS is file-level storage
+- Availability
+  - Since EBS is directly attached to the instance there is no sign of term availability while EFS is highly durable and highly available storage
+- Durability
+  - EFS is highly durable storage
+  - EBS is similar to hard disks
+  - However, EBS is connected to virtual EC2 instances and offers 20 times more reliability than normal hard disks
+- Performance
+  - EBS offers a Baseline performance of 3 IOPS per GB for General Purpose volume
+  - EFS supports up to 7000 file system operations per second.
+- Data stored
+  - Data stored in EBS remains in the same availability zone and multiple replicas are created within the same availability zone
+  - In EFS the data stored remains in the same region and multiple replicas are created within the same region
+- Comprehensive Managed Service
+  - EFS is a completely managed service, which means that your firm will never have to patch, deploy, or maintain your file system
+- Data Access
+  - EBS can only be accessed by a single EC2 instance and not directly via the internet
+  - EFS storage allows access of 1 to 1000s of EC2 instances concurrently via the internet as long as they are present in the same region
+- Encryption
+  - Both EBS and EFS supports encryption and uses an AWS KMS–Managed Customer Master Key (CMK) and AES 256-bit Encryption standards for encryption
+- File Size Limitation
+  - No limitation to file size in EBS since it's directly connected to the EC2 instance
+  - EFS the maximum size of a single file can be up to 47.9TiB
+- Cost Savings
+  - EFS: you pay for what you use and how much you use, since there is no advanced provisioning, up-front fees, or commitments
+  - EBS: you need to attach a fixed volume and are charged for the same
+
+
+
+
+EBS Use Cases
+- Software Testing and development: Amazon EBS is connected only to a particular instance, so it is best suited for testing and development purposes.
+- Business continuity: Amazon EBS provides a good level of business consistency as users can run applications in different AWS regions and all they require is EBS Snapshots and Amazon machine images.
+- Enterprise-wide applications: EBS provides block-level storage, so it allows users to run a wide variety of applications including Microsoft Exchange, Oracle, etc.
+- Transactional and NoSQL databases: As EBS provides a low level of latency so it offers an optimum level of performance for transactional and NO SQL databases. It also helps in database management.
+
+
+
+EFS Use Cases
+- Lift-and-shift application support: EFS is elastic, highly available, and highly scalable storage, and these all features and enables users to move enterprise applications easily and quickly.
+- Analytics for big data: EFS has got the ability to run big data applications.
+- Web server support: EFS is a highly robust throughput file system and is capable of enabling web serving applications, such as websites, or blogs.
+- Application development and testing: Among different storages provided by Amazon EFS is the only one that provides a shared file system needed to share code and files.
