@@ -49,3 +49,28 @@ Snow Family - Usage Process
 4. Ship back the device when you're done (goes to the right AWS facility)
 5. Data will be loaded into an S3 bucket
 6. Snowball is completely wiped
+
+
+
+
+What is Edge Computing
+- Process data while it's being created on an edge location
+  - A truck on the road, a ship on the sea, a mining station underground
+- These locations may have
+  - Limited / no internet access
+  - Limited / no easy access to computing power
+- We setup a Snowball Edge / Snowcone device to do edge computing
+- Use cases of Edge Computing 
+  - Preprocess data
+  - Machine learning at the edge
+  - Transcoding media streams
+- Eventually (if need be) we can ship back to the device to AWS (for transferring data for example)
+
+
+
+Snow Family - Edge Computing
+- Snowcone & Snowcone SSD (similar)
+  - 2 CPUs, 4 GB of memory, wired or wireless access
+  - USB-C power using a cord or the optional battery
+- Snowball Edge - Compute Optimized
+  - 104 vCPUs, 416 GiB of RAM
