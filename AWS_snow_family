@@ -74,3 +74,20 @@ Snow Family - Edge Computing
   - USB-C power using a cord or the optional battery
 - Snowball Edge - Compute Optimized
   - 104 vCPUs, 416 GiB of RAM
+  - Optional GPU (useful for video processing or machine learning)
+  - 28 TB NVMe or 42TB HDD usable storage
+  - Storage clustering availabe (up to 16 nodes)
+- Snowball Edge - Storage Optimized
+  - Up to 40vCPUs, 80 GiB of RAM, 80 TB Storage
+- All: Can run EC2 Instances & AWS Lambda functions (using AWS IoT Greengrass)
+- Long-term deployment options: 1 and 3 years discounted pricing
+
+
+
+AWS OpsHub
+- A software you install on your computer to manage your Snow Family Device
+  - Unlocking and configuring single or clustered devices
+  - Transferring files
+  - Launching and managing instances running on Snow Family Devices
+  - Monitor device metrics (storage capacity, active instances on your device)
+  - Launch compatible AWS services on your devices (ex: Amazon EC2 Instances, AWS DataSync, Network File Systems (NFS))
