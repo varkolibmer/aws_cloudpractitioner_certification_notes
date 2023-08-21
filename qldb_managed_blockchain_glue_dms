@@ -25,3 +25,12 @@ AWS Glue
 - Fully serverless service
 - Glue Data Catalog: catalog of datasets
   - can be used by Athena, Redshift, EMR
+
+
+
+DMS - Database Migration Service
+- Quickly and securely migrate databases to AWS, resilient, self healing
+- The source database remains available during the migration
+- Supports:
+  - Homogeneous migrations: ex Oracle to Oracle
+  - Heterogeneous migrations: ex Microsoft SQL server to Aurora
