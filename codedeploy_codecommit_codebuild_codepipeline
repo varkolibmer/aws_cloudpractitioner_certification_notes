@@ -1,0 +1,35 @@
+AWS CodeDeploy
+- We want to deploy our application automatically
+- Works with EC2 instances
+- Works with On-Premise Servers
+- Hybrid Service
+- Servers / Instances must be provisioned and configured ahead of time with the CodeDeploy Agent
+
+
+
+AWS CodeCommit
+- Source-control service that hosts Git-based repositories
+- Makes it easy to collaborate with others on code
+- The code changes are automatically versioned
+- Benefits:
+  - Fully managed
+  - Scalable & highly available
+  - Private, Secured, Integrated with AWS
+
+
+AWS CodeBuild
+- Compiles source code, run tests, and produces packages that are ready to be deployed (by CodeDeploy for example)
+- Benefits:
+  - Fully managed, serverless
+  - Continuously scalable & highly available
+  - Secure
+  - Pay-as-you-go pricing, only pay for the build time
+
+
+AWS CodePipeline
+- Orchestrate the different steps to have the code automatically pushed to production
+  - Code => Build => Test => Provision => Deploy
+  - Basis for CI/CD
+- Benefits
+  - Fully managed, compatible with CodeCommit, CodeBuild, CodeDeploy, Elastic Beanstalk, CloudFormation, GitHub, 3rd-party services & custom plugins
+  - Fast delivery & rapid updates
