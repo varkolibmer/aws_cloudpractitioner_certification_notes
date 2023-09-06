@@ -1,0 +1,26 @@
+AWS Local Zones
+- Places AWS compute, storage, database, and other selected AWS services closer to end users to run latency-sensitive applications
+- Extend your VPC to more locations: "Extension of an AWS Region"
+- Compatible with EC2, RDS, ECS, EBS, ElastiCache, Direct Connect...
+
+
+
+Global Applications Architecture
+- Single Region, Single AZ
+  - No high availability
+  - No global latency
+  - Difficulty: Very easy
+- Single Region, Multi AZ
+  - High availability
+  - No global latency
+  - Difficulty: easy
+- Multi-Region: Active-Passive
+  - Multiple regions with one active EC2 instance and one passive EC2 instance
+  - Global Reads' Latency
+  - No Global Writes' Latency
+  - Difficulty: medium
+- Multi_Region: Active-Active
+  - Multiple regions with all active EC2 instances
+  - Global Reads' Latency
+  - Global Writes' Latency
+  - Difficulty: High
