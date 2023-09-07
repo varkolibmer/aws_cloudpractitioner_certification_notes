@@ -1,0 +1,44 @@
+EventBridge
+- Schedule: Cron jobs (scheduled scripts)
+- Event Pattern: Event rules to react to a service doing something
+- Trigger Lambda functions, send SNS/SQS messages...
+- Schema Registry: model event schema
+- You can archive events (all/filter) sent to an event bus (indefinitely or set period)
+- Ability to replay archived events
+
+
+CloudTrail
+- Provides governance, compliance and audit for your AWS account
+- CloudTrail is enabled by default
+- Get a history of events/API calls made within your AWS Account by
+  - Console
+  - SDK
+  - CLI
+  - AWS Services
+- Can put logs from CloudTrail into CloudWatch Logs or S3
+- A trail can be applied to All Regions (default) or a Single Region
+- If a resource is deleted in AWS, investigate CloudTrail first!
+
+
+X-Ray
+- Debugging in production:
+  - Test locally
+  - Add log statements everywhere
+  - Re-deploy in production
+- Log formats differ across applications and log analysis is hard
+- Debugging: one big monolith 'easy,' distributed services 'hard'
+- No common views of your entire architecture
+
+
+X-Ray Advantages
+- Troubleshooting performance (bottlenecks)
+- Understand dependencies in a microservice architecture
+- Pinpoint service issues
+- Review request behavior
+- Find errors and exceptions
+- Are we meeting time SLA?
+- Where am I throttled?
+- Identify users that are throttled
+
+
+
